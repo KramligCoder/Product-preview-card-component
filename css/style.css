@@ -1,0 +1,148 @@
+@font-face {
+    font-family: m_FrauncesR;
+    src: url(../fonts/Fraunces_9pt-Regular.ttf);
+}
+@font-face {
+    font-family: m_FrauncesSB;
+    src: url(../fonts/Fraunces_9pt-SemiBold.ttf);
+}
+@font-face {
+    font-family: m_FrauncesB;
+    src: url(../fonts/Fraunces_9pt-Bold.ttf);
+}
+@font-face {
+    font-family: m_MonstserratR;
+    src: url(../fonts/Montserrat-Regular.ttf);
+}
+@font-face {
+    font-family: m_MonstserratSB;
+    src: url(../fonts/Montserrat-SemiBold.ttf);
+}
+
+
+body {
+    background-color: hsl(30, 38%, 92%);
+    font-family: m_MonstserratR;
+}
+h1 {
+    font-family: 'm_FrauncesB';
+    font-size: 32px;
+    font-weight: 900;
+    line-height: 1em;
+    margin: 20px 0 25px 0;
+}
+h3 {
+    margin: 0;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 4px;
+    color: hsl(228, 12%, 48%);
+}
+p {
+    margin: 0 0 25px 0;
+    line-height: 1.4em;
+    font-size: 15px;
+    color: hsl(228, 12%, 48%);
+}
+
+.m_container {
+    max-width: 600px;
+    width: 100%;
+    margin: 0 auto;
+}
+.m_wrap {
+    display: flex;
+    align-items: center;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    vertical-align: middle;
+    background: hsl(0, 0%, 100%);
+    margin-top: 150px;
+    margin-bottom: 15px;
+    border-radius: 15px;
+}
+.m_banner {
+    width: 50%;
+    overflow: hidden;
+}
+.m_banner img {
+    width: 100%;
+    height: 100%;
+    margin-bottom: -5px;
+    border-radius: 15px 0 0 15px;
+}
+.m_banner .m_imgM {
+    display: none;
+}
+.m_content {
+    width: 50%;
+}
+#m_content {
+    padding: 0 30px 0 30px;
+}
+
+.m_price {
+    margin-bottom: 25px;
+    display: flex;
+    align-items: center;
+    -webkit-box-pack: justify;
+    vertical-align: middle;
+}
+.m_regular {
+    font-family: 'm_FrauncesB';
+    font-size: 34px;
+    font-weight: 800;
+    color: hsl(158, 36%, 37%);
+    padding-right: 20px;
+}
+.m_discount {
+    font-size: 14px;
+    text-decoration: line-through;
+    color: hsl(228, 12%, 48%);
+}
+button {
+    width: 100%;
+    border: none;
+    background: hsl(158, 36%, 37%);
+    color: hsl(0, 0%, 100%);
+    border-radius: 10px;
+    padding: 15px 0;
+    font-family: m_MonstserratR;
+    font-weight: 600;
+    cursor: pointer;
+}
+button:hover {
+    background: hsl(156deg 66% 17%);
+}
+button img {
+    margin-right: 10px;
+}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+@media only screen and (max-width: 600px) {
+
+    .m_wrap {
+        display: block;
+        margin-right: 10px;
+        margin-left: 10px;
+        margin-top: 30px;
+    }
+    .m_banner,
+    .m_content {
+        width: 100%;
+    }
+    .m_banner .m_imgD {
+        display: none;
+    }
+    .m_banner .m_imgM {
+        display: block;
+        border-radius: 15px 15px 0 0;
+    }
+    #m_content {
+        padding: 30px;
+    }
+    
+}
